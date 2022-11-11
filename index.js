@@ -8,7 +8,7 @@ const port = process.env.PORT || 5001;
 require("dotenv").config();
 app.use(express.json());
 
-const uri = `mongodb+srv://picmanDb:AsKJYhck8m2vy988@cluster0.icyspqk.mongodb.net/?retryWrites=true&w=majority`;
+const uri = "mongodb+srv://nakibDb:JD6QgYUqQA2tPXxy@cluster0.kfvltem.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -127,3 +127,4 @@ app.listen(port, () => {
   console.log(`PhotoService Server running ${port}`);
 });
 module.exports = app;
+
